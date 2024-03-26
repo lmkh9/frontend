@@ -3,15 +3,15 @@
 export default {
   props: {
     contacts: { type: Array, default: [] },
-    activeIndex: { type: Number, default: -1 },
+    activeIndex: { type: Number, default: -1 }
   },
-  emits: ["update:activeIndex"],
+  emits: ['update:activeIndex'],
   methods: {
     updateActiveIndex(index) {
-      this.$emit("update:activeIndex", index);
-    },
-  },
-};
+      this.$emit('update:activeIndex', index)
+    }
+  }
+}
 </script>
 <template>
   <ul class="list-group">
